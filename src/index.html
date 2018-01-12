@@ -11,6 +11,7 @@
 
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" />
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -51,11 +52,11 @@
                                     <i class="fa fa-home d-block"></i>
                                     Home
                                 </div>
-                                <div class="port-item p-4 bg-success">
+                                <div class="port-item p-4 bg-success" data-toggle="collapse" data-target="#resume">
                                     <i class="fa fa-graduation-cap d-block"></i>
                                     Resume
                                 </div>
-                                <div class="port-item p-4 bg-warning">
+                                <div class="port-item p-4 bg-warning" data-toggle="collapse" data-target="#work">
                                     <i class="fa fa-folder-open d-block"></i>
                                     Portfolio
                                 </div>
@@ -104,6 +105,82 @@
         </div>
     </div>
 
+    <!-- RESUME -->
+    <div id="resume" class="collapse">
+      <div class="card card-body bg-success text-white py-5">
+        <h2>My Resume</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non corrupti ex repudiandae expedita sint ad.</p>
+      </div>
+      <div class="card card-body py-5">
+        <h3>Where have I worked</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias quam facere dolore odit iste omnis!</p>
+        <div class="card-deck">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">Devmasters</h4>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, sit!</p>
+              <p class="p-2 mb-3 bg-dark text-white">Position: Full Stack Developer</p>
+              <p class="p-2 mb-3 bg-dark text-white">Phone: (555) 555-5555</p>
+            </div>
+            <div class="card-footer">
+              <h6 class="text-muted">Dates: 2015 - 2017</h6>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">Websites Pro</h4>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, sit!</p>
+              <p class="p-2 mb-3 bg-dark text-white">Position: Front End Developer</p>
+              <p class="p-2 mb-3 bg-dark text-white">Phone: (444) 444-4444</p>
+            </div>
+            <div class="card-footer">
+              <h6 class="text-muted">Dates: 2013 - 2015</h6>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">123 Designs</h4>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, sit!</p>
+              <p class="p-2 mb-3 bg-dark text-white">Position: Designer</p>
+              <p class="p-2 mb-3 bg-dark text-white">Phone: (333) 333-3333</p>
+            </div>
+            <div class="card-footer">
+              <h6 class="text-muted">Dates: 2010 - 2013</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PORTFOLIO -->
+    <div id="work" class="collapse">
+      <div class="card card-body bg-warning py-5">
+        <h3>My Portfolio</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis facere consequatur perspiciatis autem excepturi amet?</p>
+      </div>
+      <div class="card card-body py-5">
+        <h3>What have I built?</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas, culpa?</p>
+        <div class="row">
+          <div class="col-md-4">
+            <a href="img/tech-1.png" data-toggle="lightbox" data-gallery="img-gallery">
+              <img src="img/tech-1.png" class="img-fluid">
+            </a>            
+          </div>
+          <div class="col-md-4">
+              <a href="img/tech-2.png" data-toggle="lightbox" data-gallery="img-gallery">
+                <img src="img/tech-2.png" class="img-fluid">
+              </a>
+          </div>
+          <div class="col-md-4">
+              <a href="img/tech-3.jpg" data-toggle="lightbox" data-gallery="img-gallery">
+                <img src="img/tech-3.jpg" class="img-fluid">
+              </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- FOOTER -->
     <footer id="main-footer" class="p-5 bg-dark text-white">
         <div class="row">
@@ -119,6 +196,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
         crossorigin="anonymous"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js"></script>
     <script src="js/main.js"></script>
 </body>
 
